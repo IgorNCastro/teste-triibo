@@ -304,6 +304,7 @@ Essa requisição deve, obrigatoriamente, ter um `token de autenticação` nos h
   - A rota retorna o código <code>400</code>, com a mensagem <code>"Status cannot be empty!"</code> caso o status esteja presente no Body da requisição mas seja vazio;
 </details>
 <br>
+<br>
 
 | Método | Funcionalidade                                                              | URL                                                     |
 | ----- | ---------------------------------------------------------------------------- | ------------------------------------------------------- |
@@ -324,6 +325,7 @@ Essa requisição deve, obrigatoriamente, ter um `token de autenticação` nos h
 ```
 </details>
 <br>
+<br>
 
 | Método | Funcionalidade                                                                 | URL                                                           |
 | ----- | ------------------------------------------------------------------------------- | ------------------------------------------------------------- |
@@ -343,6 +345,7 @@ Essa requisição deve, obrigatoriamente, ter um `token de autenticação` nos h
 ]
 ```
 </details>
+<br>
 <br>
 
 | Método | Funcionalidade                                                              | URL                                                      |
