@@ -1,6 +1,7 @@
 # Teste Técnico Triibo
 
-Boas vindas ao repositório! 
+Boas vindas ao repositório!
+
 Esse projeto foi desenvolvido como teste técnico requerido pela empresa Triibo em processo seletivo para vaga de desenvolvedor Backend. 
 
 Aqui você encontrará detalhes de como foi o desenvolvimento do projeto e quais foram os requisitos técnicos necessários.
@@ -309,7 +310,7 @@ Essa requisição deve, obrigatoriamente, ter um `token de autenticação` nos h
 | `GET` |  Possibilita ao usuário buscar tarefas já cadastradas com base em seu título | http://localhost:3001/title/?q=(TERMO-A-SER-PESQUISADO) |
 
 <details>
-  <summary>A resposta da requisição é a seguinte, com status 200:</summary>
+  <summary>Um exemplo de resposta da requisição é o seguinte, com status 200:</summary>
   
 ```json
 [
@@ -329,7 +330,7 @@ Essa requisição deve, obrigatoriamente, ter um `token de autenticação` nos h
 | `GET` |  Possibilita ao usuário buscar tarefas já cadastradas com base em sua descrição | http://localhost:3001/description/?q=(TERMO-A-SER-PESQUISADO) |
 
 <details>
-  <summary>A resposta da requisição é a seguinte, com status 200:</summary>
+  <summary>Um exemplo de resposta da requisição é o seguinte, com status 200:</summary>
   
 ```json
 [
@@ -349,7 +350,7 @@ Essa requisição deve, obrigatoriamente, ter um `token de autenticação` nos h
 | `GET` |  Possibilita ao usuário buscar tarefas já cadastradas com base em seu status | http://localhost:3001/status/?q=(TERMO-A-SER-PESQUISADO) |
 
 <details>
-  <summary>A resposta da requisição é a seguinte, com status 200:</summary>
+  <summary>Um exemplo de resposta da requisição é o seguinte, com status 200:</summary>
   
 ```json
 [
