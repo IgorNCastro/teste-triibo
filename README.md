@@ -32,7 +32,7 @@ Após clonar o projeto em seu computador, para iniciá-lo é necessário executa
 npm install && npm run dev
 ```
 
-Após isso, você deve configurar um banco de dados MySQL e populá-lo com os dados do arquivo tasks.sql presente no diretório src/database/.
+Após isso, você deve configurar um banco de dados MySQL e populá-lo com os dados do arquivo `tasks.sql` presente no diretório `src/database/`.
 
 Este arquivo já contêm alguns exemplos de tarefas definidas para já preencher o banco de dados.
 
