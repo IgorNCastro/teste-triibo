@@ -41,18 +41,15 @@ router.put('/tasks/:id/status',
   tasksController.updateStatus
 );
 
-router.get('/search/title',
-  middlewares.validateTitle,
+router.get('/title',
   tasksController.searchTitle
 )
 
-router.get('/search/description',
-  middlewares.validateDescription,
+router.get('/description',
   tasksController.searchDescription
 )
 
-router.get('/search/status',
-  middlewares.validateStatus,
+router.get('/status',
   tasksController.searchStatus
 )
 
