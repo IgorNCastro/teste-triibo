@@ -65,7 +65,7 @@ const updateStatus = async (req, res) => {
 
 const searchTitle = async (req, res) => {
   try {
-    const searchedTask = await tasksServices.searchTitle(req.body);
+    const searchedTask = await tasksServices.searchTitle(req.query);
     return res.status(201).json(searchedTask);
   } catch (error) {
     console.log(error);
@@ -74,7 +74,7 @@ const searchTitle = async (req, res) => {
 
 const searchDescription = async (req, res) => {
   try {
-    const searchedTask = await tasksServices.searchDescription(req.body);
+    const searchedTask = await tasksServices.searchDescription(req.query);
     return res.status(201).json(searchedTask);
   } catch (error) {
     console.log(error);
@@ -83,7 +83,7 @@ const searchDescription = async (req, res) => {
 
 const searchStatus = async (req, res) => {
   try {
-    const searchedTask = await tasksServices.searchStatus(req.body);
+    const searchedTask = await tasksServices.searchStatus(req.query);
     return res.status(201).json(searchedTask);
   } catch (error) {
     console.log(error);
