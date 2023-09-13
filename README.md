@@ -32,15 +32,15 @@ Após clonar o projeto em seu computador, para iniciá-lo é necessário executa
 npm install && npm run dev
 ```
 
-Após isso, você deve configurar um banco de dados MySQL e populá-lo com os dados do arquivo tasks.sql presente no diretório src/database/
+Após isso, você deve configurar um banco de dados MySQL e populá-lo com os dados do arquivo tasks.sql presente no diretório src/database/.
+
+Este arquivo já contêm alguns exemplos de tarefas definidas para já preencher o banco de dados.
 
 Uma alternativa é utilizar o Docker para configurar o banco de dados, abaixo segue o comando que utilizei neste projeto, devendo apenas ser alterada a senha (password).
 
 ```
 docker run --name mysql -e MYSQL_ROOT_PASSWORD=password -p 3306:3306 -d mysql;
 ```
-
-Este arquivo já contêm alguns exemplos de tarefas definidas para já preencher o banco de dados.
 
 É possível realizar as requisições de CRUD através de algum cliente HTTP, como o `Insomnia`, ou o `Postman`, através dos endpoints listados abaixo.
 
