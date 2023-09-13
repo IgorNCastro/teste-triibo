@@ -77,7 +77,6 @@ Também foi utilizado o conceito de middlewares para validação das requisiçõ
   },
 ]
 ```
-
 </details>
 <br>
 <br>
@@ -98,7 +97,6 @@ Também foi utilizado o conceito de middlewares para validação das requisiçõ
   "status": "Concluída"
 }
 ```
-
 </details>
 
 <details>
@@ -111,7 +109,6 @@ Também foi utilizado o conceito de middlewares para validação das requisiçõ
   "message": "Task created."
 }
 ```
-
 </details>
 
 <details>
@@ -128,7 +125,6 @@ Também foi utilizado o conceito de middlewares para validação das requisiçõ
   <br>
   - A rota retorna o código <code>400</code>, com a mensagem <code>"Fields cannot be empty!"</code> caso o title, description ou status estejam presentes no Body da requisição mas sejam vazios;
 </details>
-
 <br>
 <br>
 
@@ -140,7 +136,6 @@ Essa requisição deve, obrigatoriamente, ter um `token de autenticação` nos h
 
 <details>
   A resposta da requisição, cao seja bem sucedida, é apenas o status 204.
-  
 <br>
 <br>
 
@@ -161,7 +156,6 @@ Essa requisição deve, obrigatoriamente, ter um `token de autenticação` nos h
   "status": "Concluída"
 }
 ```
-
 </details>
 
 <details>
@@ -172,7 +166,6 @@ Essa requisição deve, obrigatoriamente, ter um `token de autenticação` nos h
   "message": "Task updated."
 }
 ```
-
 </details>
 
 <details>
@@ -201,7 +194,6 @@ Essa requisição deve, obrigatoriamente, ter um `token de autenticação` nos h
   "title": "Tomar o café da manhã"
 }
 ```
-
 </details>
 
 <details>
@@ -212,7 +204,6 @@ Essa requisição deve, obrigatoriamente, ter um `token de autenticação` nos h
   "message": "Task title updated."
 }
 ```
-
 </details>
 
 <details>
@@ -241,7 +232,6 @@ Essa requisição deve, obrigatoriamente, ter um `token de autenticação` nos h
   "description": "Na padaria"
 }
 ```
-
 </details>
 
 <details>
@@ -252,7 +242,6 @@ Essa requisição deve, obrigatoriamente, ter um `token de autenticação` nos h
   "message": "Task description updated."
 }
 ```
-
 </details>
 
 <details>
@@ -281,7 +270,6 @@ Essa requisição deve, obrigatoriamente, ter um `token de autenticação` nos h
   "status": "Concluída"
 }
 ```
-
 </details>
 
 <details>
@@ -292,7 +280,6 @@ Essa requisição deve, obrigatoriamente, ter um `token de autenticação` nos h
   "message": "Task status updated."
 }
 ```
-
 </details>
 
 <details>
@@ -366,5 +353,6 @@ Essa requisição deve, obrigatoriamente, ter um `token de autenticação` nos h
 ]
 ```
 </details>
+<br>
 
 ---
