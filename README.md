@@ -31,7 +31,11 @@ Após clonar o projeto em seu computador, para iniciá-lo é necessário executa
 npm install && npm run dev
 ```
 
-Após isso, você pode realizar as requisições de CRUD através de algum cliente HTTP, como o `Insomnia`, ou o `Postman`, através dos enpoints listados abaixo.
+Após isso, você deve configurar um banco de dados MySQL e populá-lo com os dados do arquivo tasks.sql presente no diretório src/database/
+
+Este arquivo já contêm alguns exemplos de tarefas definidas para já preencher o banco de dados.
+
+É possível realizar as requisições de CRUD através de algum cliente HTTP, como o `Insomnia`, ou o `Postman`, através dos endpoints listados abaixo.
 
 O projeto trata-se de um teste técnico necessário para avaliar o conhecimento em Node.js e Express, com o desenvolvimento de uma API utilizando os conceitos de CRUD para leitura, cadastro, atualização, remoção e busca de tarefas. A validação das requisições em alguns endpoints é realizada através de um token **gerado pela biblioteca JWT**.
 
@@ -302,7 +306,7 @@ Essa requisição deve, obrigatoriamente, ter um `token de autenticação` nos h
 
 | Método | Funcionalidade                                                              | URL                                                     |
 | ----- | ---------------------------------------------------------------------------- | ------------------------------------------------------- |
-| `GET` |  Possibilita ao usuário buscar tarefas já cadastradas com base em seu título | http://localhost:3001/title/?q=(TERMO A SER PESQUISADO) |
+| `GET` |  Possibilita ao usuário buscar tarefas já cadastradas com base em seu título | http://localhost:3001/title/?q=(TERMO-A-SER-PESQUISADO) |
 
 <details>
   <summary>A resposta da requisição é a seguinte, com status 200:</summary>
@@ -322,7 +326,7 @@ Essa requisição deve, obrigatoriamente, ter um `token de autenticação` nos h
 
 | Método | Funcionalidade                                                                 | URL                                                           |
 | ----- | ------------------------------------------------------------------------------- | ------------------------------------------------------------- |
-| `GET` |  Possibilita ao usuário buscar tarefas já cadastradas com base em sua descrição | http://localhost:3001/description/?q=(TERMO A SER PESQUISADO) |
+| `GET` |  Possibilita ao usuário buscar tarefas já cadastradas com base em sua descrição | http://localhost:3001/description/?q=(TERMO-A-SER-PESQUISADO) |
 
 <details>
   <summary>A resposta da requisição é a seguinte, com status 200:</summary>
@@ -342,7 +346,7 @@ Essa requisição deve, obrigatoriamente, ter um `token de autenticação` nos h
 
 | Método | Funcionalidade                                                              | URL                                                      |
 | ----- | ---------------------------------------------------------------------------- | -------------------------------------------------------- |
-| `GET` |  Possibilita ao usuário buscar tarefas já cadastradas com base em seu status | http://localhost:3001/status/?q=(TERMO A SER PESQUISADO) |
+| `GET` |  Possibilita ao usuário buscar tarefas já cadastradas com base em seu status | http://localhost:3001/status/?q=(TERMO-A-SER-PESQUISADO) |
 
 <details>
   <summary>A resposta da requisição é a seguinte, com status 200:</summary>
