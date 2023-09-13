@@ -46,21 +46,21 @@ const updateStatus = async (req) => {
   return 'Task status updated.';
 };
 
-const searchTitle = async (body) => {
-  const { title } = body;
-  const searchedTasks = await tasksModel.searchTitle(title);
+const searchTitle = async (query) => {
+  const { q } = query;
+  const searchedTasks = await tasksModel.searchTitle(q);
   return searchedTasks;
 };
 
-const searchDescription = async (body) => {
-  const { description } = body;
-  const searchedTasks = await tasksModel.searchDescription(description);
+const searchDescription = async (query) => {
+  const { q } = query;
+  const searchedTasks = await tasksModel.searchDescription(q);
   return searchedTasks;
 };
 
-const searchStatus = async (body) => {
-  const { status } = body;
-  const searchedTasks = await tasksModel.searchStatus(status);
+const searchStatus = async (query) => {
+  const { q } = query;
+  const searchedTasks = await tasksModel.searchStatus(q);
   return searchedTasks;
 };
 
